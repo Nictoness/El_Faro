@@ -28,10 +28,9 @@ Estructuración semántica con HTML
 Manipulación básica del DOM con JavaScript
 Organización de contenido en interfaces web
 Importancia de la claridad visual en sitios informativos
-📂 Cómo ejecutar el proyecto
-Clonar el repositorio:
-git clone https://github.com/tuusuario/el-faro-web.git
-Abrir el archivo index.html en el navegador
+
+Vista en tiempo real
+https://jazzy-creponne-b35576.netlify.app
 
 Estado del proyecto
 Proyecto en construccion como parte de formación académica, con posibilidad de mejoras futuras en diseño responsivo y funcionalidades dinámas adicionales.
