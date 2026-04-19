@@ -30,7 +30,7 @@ Organización de contenido en interfaces web
 Importancia de la claridad visual en sitios informativos
 
 Vista en tiempo real
-https://jazzy-creponne-b35576.netlify.app
+https://elfaroui.netlify.app/
 
 Estado del proyecto
 Proyecto en construccion como parte de formación académica, con posibilidad de mejoras futuras en diseño responsivo y funcionalidades dinámas adicionales.
