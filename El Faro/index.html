@@ -1,210 +1,218 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Faro</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <div id="reloj"></div>
 </head>
 
 <body>
-<h1>
-    El Faro <img src="CM053_faro.jpg" height=50>
-</h1>
- 
-<h2>
-    Menú
-</h2>
-<!--el clase aqui es para que al momento de modificar con css tome todos los menues, -->
-<nav class="Menu">
-<a href="https://www.elfaro.cl/inicio">Inicio</a>
-<a href="https://wwwe.lfaro.cl/deporte">Deporte</a>
-<a href="https://www.elfaro.cl/Negocios">Negocios</a>
+
+<!--Aviso superior-->
+<div class="bg-warning text-dark text-center py-2">
+   Aviso: Nuevas noticias disponibles
+</div>
+
+<!--Header con título y reloj-->
+<header class="container d-flex justify-content-between align-items-center mt-3">
+  <h1>
+    El Faro <img src="CM053_faro.jpg" height="50">
+  </h1>
+
+  <!--Reloj dinámico -->
+  <div id="reloj"></div>
+</header>
+
+<!--Navbar (menú de navegación) reemplazo del Nav que habia antes-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-3">
+  <div class="container">
+    <a class="navbar-brand" href="#">El Faro</a>
+
+    <!--para telefonos-->
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!--Opciones del menu-->
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Política</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Deportes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
 </nav>
 
-<h3>Noticias generales</h3>
+<!--Contenido principal-->
+<div class="container mt-4">
 
-<div class="contenedor"> <!--al agregar una clase contenedor aqui me permite poder agregar el grid a todo el contenido de la web-->
+  <div class="row">
 
-    <div class="articulo">
-        <h4>Conductor evita encerrona en Quinta Normal: maniobra audaz</h4>
-            <h5>Noticias generales</h5>
-                <p>Un conductor realizó una maniobra arriesgada para evitar una encerrona en Quinta Normal. Descubre los detalles de este valiente acto...</p>
-    </div>
-           <!-- <div class="contenedor_video"> esto lo comente porque sinceramente no supe como arreglar el video, al igual que el audio pero no queria borrarlos 
-                     <video width="400" height="600" controls>
-                         <source src ="Download.mp4">  
-                     </video>
-            </div>-->
-
-    <div class="articulo">
-        <h4>La cautela del rubro panadero ante alza de combustibles: "El 90% de las panaderías funciona con petróleo</h4>
-            <h5>Noticias generales</h5>
-                <p>"Subir el pan no es fácil, es un tema bastante sensible para la comunidad", sostuvo el presidente de Indupan...</p>
+    <!--Artículo destacado-->
+    <div class="col-md-8">
+      <div class="card mb-4"> 
+        <div class="card-body">
+          <h3 class="card-title">Artículo Destacado</h3>
+          <p class="card-text">Este es el artículo más importante.</p>
+        </div>
+      </div>
     </div>
 
-      <!--  <audio controls>
-            <source src="Industria del pan en alerta por alza de combustibles.mp3">
-        </audio>-->
-    
+    <!--Artículos secundarios-->
+    <div class="col-md-4">
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5>Artículo pequeño 1</h5>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5>Artículo pequeño 2</h5>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<!--Sección Noticias Generales-->
+<h3 class="titulo_seccion">Noticias generales</h3>
+
+<div class="contenedor">
+    <!--Cada "articulo" es un bloque dentro del grid-->
     <div class="articulo">
-        <h4>Lanzan Fondo Comunidad Activa 2026 en la RM: financia iniciativas de organizaciones sociales</h4>
-             <h5>Noticias generales</h5>    
-                 <p>Este miércoles será el lanzamiento del Fondo Comunidad Activa 2026, iniciativa del Gobierno de Santiago para financiar proyectos en la región Metropolitana...</p>
+        <h4>Conductor evita encerrona en Quinta Normal</h4>
+        <h5>Noticias generales</h5>
+        <p>Un conductor realizó una maniobra arriesgada...</p>
+    </div>
+
+    <div class="articulo">
+        <h4>Alza de combustibles afecta panaderías</h4>
+        <h5>Noticias generales</h5>
+        <p>"Subir el pan no es fácil..."</p>
+    </div>
+
+    <div class="articulo">
+        <h4>Fondo Comunidad Activa 2026</h4>
+        <h5>Noticias generales</h5>
+        <p>Se financiarán proyectos sociales...</p>
     </div>
 </div>
 
-<h3 class="titulo_seccion">Deportes</h3> <!--con una clase particular para los titulos me permite poder modificarlos despues-->
+<!--Deportes-->
+<h3 class="titulo_seccion">Deportes</h3>
+
 <div class="contenedor">
     <div class="articulo">
-        <h4>Colo Colo derrota de visita a Deportes Concepción y consigue su primera victoria en la Copa de la Liga</h4>
-            <h5>Deportes</h5>
-                <p>Tras dejar muchas interrogantes en el empate ante Coquimbo Unido, Colo Colo mostró esta jornada un juego más efectivo que se reflejó en el resultado. En el Estadio Ester Roa Rebolledo, derrotó por 3-1 a Deportes Concepción por la segunda fecha de la Copa de la Liga...</p>
-    </div>
-
-
-    <div class="articulo"> <!--la clase articulos me peremite que el grid funcione correctamente, separando el articulo en si de los titulos-->
-        <h4>Así van las tablas de los grupos de la Copa de la Liga: Fecha 2</h4>
-            <h5>Deportes</h5>
-                <p>Arrancó la fecha 2 de la fase grupal de la Copa Liga. La noche de este martes Colo Colo derrotó 3-1 de visita a Deportes Concepción...</p>
+        <h4>Colo Colo gana de visita</h4>
+        <h5>Deportes</h5>
+        <p>Victoria en la Copa de la Liga...</p>
     </div>
 
     <div class="articulo">
-        <h4>Fernando Gago explica por qué quedó conforme pese a la derrota de la U frente a La Calera y le deja un mensaje a Juan Martín Lucero</h4>
-            <h5>Deportes</h5>
-                <p>La era de Fernando Gago en la U arrancó mal. Este martes, el elenco azul perdió 1-0 contra Unión La Calera por la Copa de la Liga...</p>
+        <h4>Tabla de posiciones</h4>
+        <h5>Deportes</h5>
+        <p>Resultados de la fecha...</p>
+    </div>
+
+    <div class="articulo">
+        <h4>Derrota de la U</h4>
+        <h5>Deportes</h5>
+        <p>Análisis del partido...</p>
     </div>
 </div>
-    
+
+<!--Negocios-->
 <h3 class="titulo_seccion">Negocios</h3>
+
 <div class="contenedor">
     <div class="articulo">
-        <h4>Banco Central mantiene la tasa y advierte una "importante" alza de la inflación por precio de los combustibles</h4>
-            <h5>Negocios</h5>
-                 <p>Una de las decisiones de tasa de interés más esperadas de los últimos meses informó esta tarde el consejo del Banco Central, que optó por no sorprender...</p>
+        <h4>Banco Central mantiene tasa</h4>
+        <h5>Negocios</h5>
+        <p>Impacto en inflación...</p>
     </div>
-    <div class="articulo">
-        <h4>Comisión de Hacienda aprueba proyecto de mitigación por alza de combustibles: Será votado en Sala esta tarde</h4>
-            <h5>Negocios</h5>
-                 <p>La comisión de Hacienda de la Cámara de Diputadas y Diputados aprobó este martes, tanto en general como en particular, el proyecto de ley que establece medidas transitorias para contener el precio del kerosene doméstico, en medio de la actual emergencia energética internacional...</p>
-    </div>
-    <div class="articulo">
-     <h4>Mercosur y UE activan histórico acuerdo comercial: Claves de su entrada en vigor provisional</h4>
-            <h5>Negocios</h5>
-                <p>Tras más de 25 años de negociaciones, la Unión Europea (UE) y el Mercosur darán un paso decisivo en su relación económica con la entrada en vigor provisional de su acuerdo comercial el próximo 1 de mayo...</p>
 
+    <div class="articulo">
+        <h4>Proyecto de mitigación</h4>
+        <h5>Negocios</h5>
+        <p>Medidas por alza de combustibles...</p>
+    </div>
+
+    <div class="articulo">
+        <h4>Acuerdo Mercosur - UE</h4>
+        <h5>Negocios</h5>
+        <p>Impacto económico...</p>
     </div>
 </div>
 
-<script>
-document.addEventListener("DOMContentLoaded",function(){
-    function reloj_actualizado(){
-        const ahora = new Date();
-        const opciones = {
-            weekday:'long',
-            year:'numeric',
-            month:'long',
-            day:'numeric'
-        };
-        const fecha=ahora.toLocaleDateString (`es-CL`, opciones);
-        const hora=ahora.toLocaleTimeString(`es-CL`);
-        
-        document.getElementById('reloj').textContent =`${fecha}-${hora}`;
-    }
-    setInterval(reloj_actualizado,1000);
-    reloj_actualizado();
-});
-</script>
-
+<!--Sección artículos dinámicos-->
 <section class="articulos">
-  <h3> Artículos (<span id="contador">0</span>)</h3>
+  <h3>Artículos (<span id="contador">0</span>)</h3>
 
+  <!--Formulario para agregar artículos-->
   <form id="formArticulo">
     <input type="text" id="titulo" placeholder="Título" required>
     <textarea id="descripcion" rows="4" placeholder="Descripción" required></textarea>
     <button type="submit">Agregar artículo</button>
   </form>
 
+  <!--Aquí JS inserta los artículos-->
   <div id="listaArticulos"></div>
 </section>
-<script>
-const form = document.getElementById('formArticulo');
-const lista = document.getElementById('listaArticulos');
-const contador = document.getElementById('contador');
 
-let articulos = [];
-
-form.addEventListener('submit', function(e) {
-  e.preventDefault();
-
-  const titulo = document.getElementById('titulo').value;
-  const descripcion = document.getElementById('descripcion').value;
-
-  const articulo = { titulo, descripcion };
-  articulos.push(articulo);
-
-  renderArticulos();
-  form.reset();
-});
-
-function renderArticulos() {
-  lista.innerHTML = '';
-
-  articulos.forEach(a => {
-    const div = document.createElement('div');
-    div.innerHTML = `<h3>${a.titulo}</h3><p>${a.descripcion}</p>`;
-    lista.appendChild(div);
-  });
-
-  contador.textContent = articulos.length;
-}
-</script>
-
+<!--Formulario de contacto-->
 <section class="contacto">
-    <h3> Formulario de Contacto</h3>
+    <h3>Formulario de Contacto</h3>
+
     <form id="formContacto">
         <input type="text" id="nombreContacto" placeholder="Tu nombre" required>
         <textarea id="mensajeContacto" rows="4" placeholder="Escribe tu mensaje" required></textarea>
-        <button type="submit"> Enviar mensaje</button>
+        <button type="submit">Enviar mensaje</button>
     </form>
-    <div id="respuestaContacto" style="margin-top: 15px; padding: 10px; border-radius: 5px;"></div>
+
+    <!--Respuesta dinámica-->
+    <div id="respuestaContacto"></div>
 </section>
 
-<script>
-const formContacto = document.getElementById('formContacto');
-const respuestaDiv = document.getElementById('respuestaContacto');
+<!--Footer-->
+<footer class="bg-dark text-white mt-5 p-4">
+  <div class="container">
+    <div class="row">
 
-if (formContacto) {
-    formContacto.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        const nombre = document.getElementById('nombreContacto').value.trim();
-        const mensaje = document.getElementById('mensajeContacto').value.trim();
-        
-        if (nombre === '' || mensaje === '') {
-            respuestaDiv.innerHTML = '<div style="background:#ffebee;color:#c62828;padding:10px;"> Completa todos los campos</div>';
-            return;
-        }
-        
-        respuestaDiv.innerHTML = `<div style="background:#e8f5e9;color:#2e7d32;padding:10px;"> Gracias ${nombre}, Mensaje enviado.</div>`;
-        formContacto.reset();
-        
-        setTimeout(() => { respuestaDiv.innerHTML = ''; }, 3000);
-    });
-}
-</script>
+      <div class="col-md-4">
+        <h5>El Faro</h5>
+        <p>Noticias actualizadas todos los días.</p>
+      </div>
+
+      <div class="col-md-4">
+        <h5>Secciones</h5>
+        <ul class="list-unstyled">
+          <li>Inicio</li>
+          <li>Política</li>
+          <li>Deportes</li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <h5>Contacto</h5>
+        <p>correo@elfaro.cl</p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<!--Bootstrap JS(necesario para navbar)-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="script.js"></script>
 
 </body>
-<footer>
-
-    <h3>Informacion Adicional</h3>
-        <nav class="Menu">
-            <a href="https//wwww.politicas.cl">Politicas</a>
-            <a href="https//wwww.facebook.cl">Facebook</a>
-            <a href="https//wwww.instagram.cl">Instagram</a>
-        </nav>
-        
-    </div>
-</footer>
 </html>
