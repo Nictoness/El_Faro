@@ -1,40 +1,64 @@
-El Faro es un sitio web informativo desarrollado como proyecto académico, enfocado en la presentación de noticias y contenido dinámico. El objetivo principal fue construir una interfaz clara, organizada y funcional utilizando tecnologías web básicas.
+El Faro
 
-Este proyecto demuestra habilidades en desarrollo frontend, estructuración de contenido y aplicación de lógica básica en la web.
+El Faro es un proyecto web desarrollado como parte de mi formación en Programación y Análisis de Sistemas. Consiste en un sitio informativo orientado a la publicación y gestión de artículos, con una estructura enfocada en organización de contenido, navegación clara y base de datos integrada.
+
+Objetivo
+
+Desarrollar una aplicación web funcional que permita aplicar conceptos de desarrollo frontend y backend, integración con base de datos y organización básica de contenido dinámico.
 
 Tecnologías utilizadas
-HTML5
-CSS3
-JavaScript
 
-Funcionalidades principales
-Estructura de sitio web tipo portal de noticias
-Visualización de fecha y hora en tiempo real
-Carga dinámica de contenido
-Diseño organizado y navegación intuitiva
-Separación de secciones (noticias, cabecera, contenido, etc.)
+- HTML
+- CSS
+- JavaScript
+- PHP
+- SQLite
+- Visual Studio Code
 
-Objetivos del proyecto
-Aplicar conocimientos de desarrollo web básico
-Implementar una estructura escalable para contenido informativo
-Mejorar la presentación visual y experiencia de usuario
-Integrar elementos dinámicos en una página estática
+Funcionalidades
 
-Vista previa
+- Visualización de artículos y contenido informativo
+- Estructura de navegación y organización por secciones
+- Conexión entre PHP y base de datos SQLite
+- Persistencia de datos para almacenamiento y consulta de contenido
+- Preparación de estructura para futuras funcionalidades de gestión y administración
 
+Implementación reciente
 
-Aprendizajes clave
-Estructuración semántica con HTML
-Manipulación básica del DOM con JavaScript
-Organización de contenido en interfaces web
-Importancia de la claridad visual en sitios informativos
+Durante la última etapa de desarrollo se integró una base de datos SQLite conectada mediante PHP, permitiendo que el proyecto evolucione desde un sitio estático hacia una aplicación web con contenido dinámico y persistencia de información.
 
-Vista en tiempo real
-https://elfaroui.netlify.app/
+Esta implementación permitió trabajar con:
 
-Estado del proyecto
-Proyecto en construccion como parte de formación académica, con posibilidad de mejoras futuras en diseño responsivo y funcionalidades dinámas adicionales.
+- conexión a base de datos
+- consultas de información
+- separación básica entre lógica y presentación
+- estructura inicial de backend
 
-Autor:
+Aprendizajes
+
+Este proyecto me permitió reforzar conocimientos en:
+
+- desarrollo de interfaces web
+- estructuración de proyectos
+- lógica de programación
+- manejo básico de bases de datos
+- integración entre frontend y backend
+
+Próximas mejoras
+
+- formulario de registro e inicio de sesión
+- administración de artículos por categorías
+- panel básico de gestión de contenido
+- mejoras en validación y estructura de datos
+
+Cómo ejecutar el proyecto
+
+1. Clonar el repositorio
+2. Abrir el proyecto en Visual Studio Code
+3. Ejecutarlo en un entorno local con soporte PHP
+4. Verificar que el archivo de base de datos SQLite esté disponible en la ruta correspondiente
+
+Autor
+
 Matías Collihuin
 Estudiante de Programación y Análisis de Sistemas
